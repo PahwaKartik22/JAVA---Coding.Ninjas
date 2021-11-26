@@ -7,7 +7,7 @@ public class DecimalToBinary {
     { Scanner sc = new Scanner(System.in);
       int n = sc.nextInt();
       long x = 0,i = 1; 
-      if ((0<=n)&&(n<=100000))
+      if ((0<=n)&&(n<=100000)) // This program won't work for values above 524287 after removing n<=100000
       while (n!=0)
       { int t = n%2;
         x = x + t*i;
