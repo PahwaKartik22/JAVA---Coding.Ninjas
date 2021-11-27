@@ -8,7 +8,7 @@ public class PrintingAllPrimeNumberTillN {
 	    Scanner sc = new Scanner(System.in);
 	    int  i = 2;
 	    int n= sc.nextInt();
-	    for(i=2;i<=n;i++) 
+	    for(i=2;i<n;i++) 
 	    {
 	    for(int d =2;d<i;d=d+1)
 	        {
@@ -16,9 +16,9 @@ public class PrintingAllPrimeNumberTillN {
 	        i++;
 	        continue;
 	        }
-	        
-	    }
 	        System.out.println(i);
+	    }
+	        
 	        
 	    }
 	}
