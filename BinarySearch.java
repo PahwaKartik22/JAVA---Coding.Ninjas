@@ -11,7 +11,7 @@ public static int[] takeInput(int n)
 }
 
 public static int binarySearch(int input[],int x)
-{   int count = 0;
+{   int count = -1;
 	int start = 0, end = input.length;
 	for(int k = 0; k<input.length; k++)
 	{ int i= ((start+end)/2);
@@ -23,8 +23,6 @@ public static int binarySearch(int input[],int x)
 		else if (input[i]==x)
 	    { count = i; break;}
 	}
-	if (input[count]!=x)
-	{ count=-1;}
 	return count;
 }
 
