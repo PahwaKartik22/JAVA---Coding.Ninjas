@@ -22,6 +22,8 @@ public static int binarySearch(int input[],int x)
 	    { end = input.length; start = i;} 
 		else if (input[i]==x)
 	    { count = i; break;}
+	    else if (start==end)
+		{ break;}
 	}
 	return count;
 }
