@@ -15,15 +15,17 @@ public class PrintSpiral {
 	public static int[] printSpiral(int n, int m)
 	{ int input[][]= takeInput(n,m);
 	   int arr[] = new int[n*m];
-	   for (int i = 0,z=0; z<arr.length; i++)
-	   { int j=0,k=n-i-1,o=n-i-1;
-		   for (j =0; j<m-i-1&&z<arr.length; j++)
+	   for (int i = 0,z=0; z<arr.length&&i<=n/2; i++)
+	   { int j=i,k=n-i-1,o=n-i-1;
+		   for (j =i; j<m-i-1&&z<arr.length; j++)
 	        { arr[z]=input[i][j];z++;}
+	      if (n%2==1&&z==arr.length-1)
+	        { arr[z]=input[i][m-i-1];z++;}
 	       for (k=i; k<n-i-1&&z<arr.length; k++)
 	        { arr[z]=input[k][j]; z++;}
-	       for (o=m-i-1; o>0&&z<arr.length; o--)
+	       for (o=m-i-1; o>i&&z<arr.length; o--)
 	        { arr[z]=input[k][o]; z++;}
-	       for (int p=n-i-1; p>1&&z<arr.length; p--)
+	       for (int p=n-i-1; p>i&&z<arr.length; p--)
 	        { arr[z]=input[p][o]; z++;}
 	   }    
 	  
@@ -56,3 +58,4 @@ public class PrintSpiral {
 	}
 	}
 	}
+
