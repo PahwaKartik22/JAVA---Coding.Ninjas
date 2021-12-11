@@ -1,5 +1,5 @@
 package stringAssignment;
-
+// note this is for compressing the whole string irrespective of consecutive alphabets
 import java.util.Scanner;
 
 public class CompressTheString 
