@@ -7,10 +7,9 @@ public class CompressTheString
 	public static void main(String args[])
 	{ Scanner sc = new Scanner(System.in);
 	  String str = sc.next();
-	  int u = str.length();
 	  String str1 = "";
 	  String str2 = "";
-	  for (int i =0; i<u-1 && str.length()>0;i++ )
+	  for (; str.length()>0; )
 	   { int j=1;int z=0; str2="";
 	     for (int k=z+1; k<str.length(); k++)
 	      { if (str.charAt(z)==str.charAt(k))
