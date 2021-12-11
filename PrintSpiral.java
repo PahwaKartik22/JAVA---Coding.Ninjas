@@ -15,7 +15,7 @@ public class PrintSpiral {
 	public static int[] printSpiral(int n, int m)
 	{ int input[][]= takeInput(n,m);
 	   int arr[] = new int[n*m];
-	   for (int i = 0,z=0; z<arr.length&&i<=n/2; i++)
+	   for (int i = 0,z=0; z<arr.length; i++)
 	   { int j=i,k=n-i-1,o=n-i-1;
 		   for (j =i; j<m-i-1&&z<arr.length; j++)
 	        { arr[z]=input[i][j];z++;}
